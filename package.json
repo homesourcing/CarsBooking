@@ -2,7 +2,7 @@
   "name": "booking",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://homesourcing.github.io/CarsBooking",
   "dependencies": {
     "@apollo/client": "^3.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
