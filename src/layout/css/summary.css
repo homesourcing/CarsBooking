@@ -1,0 +1,111 @@
+.w4 {
+    @apply h-full md:h-[38rem]  w-full md:w-1/2;
+    border: 2px solid #1a51a0;
+    @apply grid place-items-center;
+}
+.heading h3 {
+    font-weight: 700;
+    color: #707070;
+    font-size: 1.7em;
+}
+
+.w4 .col-11 {
+    @apply w-full;
+}
+.w4 .actions input[type='button'] {
+    border          : none;
+    width           : 8rem;
+    height          : 32px;
+    margin-right    : 0.5rem;
+    background-color: white;
+    color           : #1a51a0;
+    font-weight     : bold;
+}
+
+.w4 .summary {
+    background-color: #e5e5e5;
+    margin          : 0 20% 5% 20%;
+    padding         : 12px;
+    border-radius   : 6px;
+    text-align      : left;
+    font-size       : 13px;
+    font-weight     : bold;
+    border          : 1px solid #ccc;
+}
+
+.w4 .summary h3 {
+    font-size: 14px;
+    margin   : 0;
+    color    : #587fb6 !important;
+}
+
+.w4 .summary div.table {
+    background-color   : #fff;
+    margin             : 0.2rem 0;
+    border-radius      : 6px;
+    padding            : 1px 8px;
+    /* float           : left; */
+    width              : 100%;
+}
+
+.w4 .actions {
+    clear     : both;
+    text-align: center;
+    width     : 100%;
+    padding   : 5px 0;
+}
+
+.w4 .row {
+    display      : flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.w4 .row:last-child {
+    border-bottom: none;
+}
+
+.table .col-1 {
+    border-right: 1px solid #1a51a0;
+    color       : #1a51a0;
+    min-width: 80px;
+}
+
+.table .col-1,
+.table .col-11 {
+    text-align    : center;
+    min-height    : 40px;
+    vertical-align: middle;
+    line-height   : 40px;
+}
+
+.table .col-1:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.table .col-11:last-child {
+    border-bottom: none;
+    border-right : none;
+}
+
+.table .col-11 {
+    color      : #888;
+    line-height: 40px;
+}
+
+.table .col-11 span {
+    width      : 100%;
+    display    : block;
+    line-height: 15px;
+    font-size  : 11px;
+}
+
+.col-11 .type {
+    font-size  : 11px;
+    font-weight: normal;
+}
+
+span.desc {
+    color    : #999;
+    font-size: 0.7rem;
+    margin   : 20px 0 10px 0;
+}

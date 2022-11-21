@@ -1,0 +1,271 @@
+@tailwind base;
+
+@tailwind components;
+
+@media (min-width: 375px) {
+    .main {
+        @apply place-items-center;
+    }
+    .sec-flag {
+        @apply ml-1;
+    }
+    .sec-carname {
+        @apply p-1 w-3/5; 
+    }
+    .sec-carname div {
+        @apply w-48 px-2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main {
+        @apply grid place-items-center;
+    }
+    .sec-flag dif {
+        @apply ml-4;
+    }
+    .sec-carname {
+        @apply p-4 md:p-0 w-4/5;
+    }
+    .sec-carname div {
+        @apply w-60 md:w-48 px-4;
+    }
+}
+
+.default-text {
+    font-size: .95rem;
+    font-weight: 700;
+    color: #707070;
+}
+
+/* PROGRESS STEPS */
+.progressbar-wrapper {
+    background: #fff;
+    padding: 1rem;
+    height: 150px;
+    @apply lg:w-1/2 md:w-full p-4 grid place-items-center;
+}
+
+.progressbar {
+    width: 100%;
+    @apply grid items-center justify-center grid-cols-4 gap-2
+}
+
+.progressbar li {
+    list-style-type: none;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+    padding-top: 12px;
+}
+
+.progressbar li:before {
+    width: 35px;
+    height: 35px;
+    content: "";
+    line-height: 30px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 3px auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 30px;
+    left: -50%;
+    z-index: 0;
+}
+
+.progressbar li:first-child:after {
+    content: none;
+}
+
+.progressbar li:first-child {
+    @apply sm:pt-0 md:pt-0 lg:pt-3 !important
+}
+
+.progressbar li.active {
+    color: 1A51A0;
+    font-weight: bold;
+}
+
+.progressbar li.active:before {
+    border-color: #5887CB;
+    background: #1A51A0;
+}
+
+.progressbar li.active+li:after {
+    background-color: #1A51A0;
+}
+
+#p-1:before {
+    content: '1';
+}
+
+#p-2:before {
+    content: '2';
+}
+
+#p-3:before {
+    content: '3';
+}
+
+#p-4:before {
+    content: '4';
+}
+
+li.active:before {
+    color: white;
+}
+
+/*./ PROGRESS STEPS */
+
+
+
+.box {
+    @apply grid place-items-center w-full rounded-3xl w-full p-4;
+    border: 1px solid #EEEEEE;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.w1 {
+    @apply h-80 w-full md:w-1/2 p-4 grid place-items-center;
+    border: 2px solid #1a51a0;
+}
+
+.title {
+    @apply mb-6;
+    font-weight: 700;
+    color: #707070;
+    font-size: 1.7em;
+}
+
+.w1 .input-label {
+    background-color: #1a51a0;
+    color: #fff;
+    padding: 3px 20px 10px 14px;
+    font-size: 1rem;
+}
+
+.contactinfo {
+    padding: 0;
+    display: block;
+    text-align: right;
+    color: #999;
+    font-size: .9rem;
+    margin: 0 0 10px;
+}
+
+.green-button {
+    background-color: #1ed760;
+    border: none !important;
+    width: 8rem;
+    height: 32px;
+    float: right;
+    margin-right: 2rem;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.green-button:hover {
+    background-color: #12BD4F;
+}
+
+.btn {
+    @apply px-4 py-2 rounded;
+}
+
+.btn-blue {
+    @apply px-4 text-white bg-blue-500 rounded-full hover:bg-blue-700;
+    background-color: #1a51a0;
+    border: none;
+    height: 32px;
+    float: right;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.btn-black {
+    @apply px-4 text-white bg-blue-500 rounded-full hover:bg-blue-700;
+    background-color: #222222;
+    border: 1px solid #FFFFFF;
+    height: 32px;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.btn-white {
+    @apply px-4 text-white bg-blue-500 rounded-full hover:bg-blue-700;
+    background-color: #FFFF;
+    border: 1px solid #1a51a0;
+    height: 32px;
+    color: #1a51a0;
+    font-size: 0.9rem;
+}
+
+/*
+.btn-success {
+    @apply px-4 py-2 font-bold text-white bg-green-500 rounded hover: bg-green-700;
+}
+
+.btn-danger {
+    @apply px-4 py-2 font-bold text-white bg-red-500 rounded hover: bg-red-700;
+}
+ */
+
+/**** SERVICES ****/
+.service-desc {
+    background: #efefef;
+    color: #666;
+    font-size: 13px;
+    margin: 0 1px;
+    padding: 4px;
+    display: none;
+    pointer-events: none;
+}
+
+.service-desc.show {
+    display: block;
+}
+
+.info-section {
+    @apply w-full md:w-1/2 p-4 grid place-items-center;
+}
+
+.info-section h1 {
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Chillax';
+    color: #262626;
+}
+
+.info-section p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Chillax';
+    color: #262626;
+    line-height: 42.48px;
+    text-align: center
+}
+
+.search-box {
+    @apply grid items-center justify-center gap-2 px-6 py-2 bg-slate-500 text-white w-96;
+    z-index: 1000;
+    position: absolute;
+}
+
+@tailwind utilities;

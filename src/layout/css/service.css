@@ -1,0 +1,350 @@
+.w2 {
+    @apply h-full md:h-[36rem] w-full md:w-1/2;
+    border: 2px solid #1a51a0;
+}
+
+.w2 .title {
+    @apply place-items-center
+}
+
+/* Checkbox */
+
+.first-service-heading div {
+    color: #707070 !important;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+}
+
+.first-service-heading label {
+    padding: 0 !important;
+}
+
+.grid-container .icon-left {
+    color: #1A51A0
+}
+
+.grid-container .tooltip {
+    position: relative !important;
+    z-index: 100;
+    display: grid;
+    margin-top: 0.3rem;
+    float: none;
+    margin-left: 10px;
+}
+
+.grid-container .service-desc.show {
+    display: block;
+    width: auto;
+    width: 16rem;
+    padding: 0.5rem;
+    background-color: #FFF !important;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.first-service-heading input {
+    margin-right: 0.5rem;
+    height: 18px;
+    width: 18px;
+}
+
+.services {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.w2 .actions {
+    margin: 1.1rem !important;
+    width: 95%;
+    border: 1px solid #1a51a0;
+    margin: 0 1rem;
+    display: flex;
+}
+
+.service-box:not(:last-child) {
+    margin-right: 1.3rem;
+}
+
+.service-box {
+    background-color: #1a51a0;
+    border-radius: 4px;
+    min-height: 14rem;
+    float: left;
+    width: 22.8%;
+    color: #fff;
+    height: auto;
+    margin-top: 1rem;
+    padding-bottom: 10px;
+}
+
+.service-box h5 {
+    padding: 0.2rem 0;
+    background: #fff;
+    margin: 0.2rem;
+    color: #1a51a0;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+}
+
+.service-box .list {
+    padding-bottom: 10px;
+}
+
+.service-box .list>div:not(.hidden-items),
+.service-box .list div.hidden-items>div {
+    padding: 0.4rem;
+    text-align: left;
+    border-bottom: 1px solid #123a73;
+    cursor: pointer;
+}
+
+.tooltip#third {
+    position: static;
+    float: right;
+}
+
+.w2 .icon-left:not(#third svg) {
+    color: #fff;
+    margin-right: 2px;
+}
+
+.w2 .icon,
+.w2 .icon-left {
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tooltip .arrow {
+    position: absolute;
+    margin: 10px 0 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    z-index: 1000;
+    visibility: hidden;
+}
+/*.tooltip .arrow {
+     position    : absolute;
+    margin      : 10px 0 0 88px;
+    width       : 0;
+    height      : 0;
+    border-left : 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top  : 10px solid #fff;
+    position: absolute;
+    margin: 10px 0 0 0px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    z-index: 1000;
+    visibility: hidden;
+}*/
+
+.info {
+    color: #055160;
+    background-color: #cff4fc;
+    border-color: #b6effb;
+}
+
+.tooltip .info {
+    width: 276px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    position: absolute;
+    visibility: hidden;
+    box-shadow: 0 0 50px 0 rgb(0 0 0 / 50%);
+    bottom: auto;
+    margin-top: 19px;
+    margin-left: -2px;
+}
+
+.tooltip>.info p {
+    /* font-weight: 400; */
+    font-size: 12px;
+    text-align: left;
+    font-weight: normal;
+    color: #666;
+}
+
+p.label {
+    margin: 0;
+}
+
+div.buttons {
+    text-align: right;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.w2 .actions div:first-child:not(.badge) {
+    float: left;
+    background-color: #1a51a0;
+    color: white;
+    width: 50%;
+    text-align: left;
+    padding-left: 6px;
+    line-height: 40px;
+}
+
+.w2 .actions p:first-child {
+    width: 29.5% !important;
+    float: left !important;
+    line-height: 15px;
+    padding-top: 2px;
+}
+
+.w2 .actions div .tags,
+.w3 .actions div .tags {
+    width: 70%;
+    padding: 0 !important;
+    /* float  : left !important; */
+}
+
+.w2 .actions input[type='button'] {
+    border: none;
+    width: 8rem;
+    height: 32px;
+    margin-right: 0.5rem;
+    color: white;
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+.w2 .actions input[type='button']:first-child {
+    background-color: #1a51a0;
+}
+
+.w2 .actions input[type='button']:last-child {
+    background-color: #1ed760;
+}
+
+.w2 .container div.heading {
+    margin: 2rem 0 0.2rem 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 1px 7px;
+    font-weight: 700;
+    line-height: 2;
+    color: #fff;
+    white-space: nowrap;
+    background-color: #666;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-left: 4px;
+}
+.w2 .actions div .tags, .w3 .actions div .tags {
+    width: 100%;
+    padding: 0!important;
+}
+
+.w2 span {
+    color: #999;
+    font-size: 0.7rem;
+    margin: 20px 0 10px 0;
+}
+
+.w2 .badge span {
+    color: #fff;
+    font-weight: normal;
+}
+
+/* TOOLTIP */
+/* .tooltip {
+    position: absolute;
+    display: inline;
+    width: 16px;
+    height: 16px;
+} */
+
+.tooltip {
+    width: 16px;
+    height: 16px;
+    /* border-radius: 10px;
+    border          : 2px solid #fff; */
+    position: absolute;
+    /* background   : rgba(255, 255, 255, .5); */
+}
+
+
+.tooltip:hover {
+    -webkit-animation-play-state: paused;
+}
+
+.tooltip:hover .info,
+.tooltip:hover .arrow {
+    visibility: visible;
+}
+
+.tooltip h3 {
+    font-weight: 100;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+.service-box>div span {
+    display: block!important;
+    line-height: 14px!important;
+    color: #fff!important;
+    font-size: 14px!important;
+    margin: 0!important;
+}
+.w2 .icon, .w2 .icon-left {
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+}
+.w2 .icon {
+    margin-right: 0.4rem;
+}
+.service-box .list>div:not(.hidden-items,.inactive):hover, .service-box .list div.hidden-items>div:hover {
+    background-color: #123a73;
+}
+.service-box .list>div:not(.hidden-items), .service-box .list div.hidden-items>div {
+    padding: 0.4rem;
+    text-align: left;
+    border-bottom: 1px solid #123a73;
+    cursor: pointer;
+}
+.service-box div.inactive span {
+    color: #888!important;
+}
+.service-box div.inactive {
+    cursor: default!important;
+}
+.service-box .list>div:hover .icon {
+    font-size: 17px;
+}
+.selected-service {
+    color: #1ed760;
+}
+.badge i {
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+    top: -10px;
+    right: -10px;
+    font-size: .7rem;
+    background: #ccc;
+    color: #666;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+    position: relative;
+    /* padding: 0 2px 0 0; */
+}
+.w2 .actions {
+    margin: 1.1rem!important;
+    width: 95%;
+    min-height: 60px;
+}
